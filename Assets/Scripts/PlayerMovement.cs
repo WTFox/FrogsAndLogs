@@ -71,17 +71,10 @@ public class PlayerMovement : MonoBehaviour {
 
 	private void HandleCaughtFly(Collider other) {
 		Debug.Log("HandleCaughtFly..");
-		/* the next line runs once per each fly in the scene (12 times)
-		 * which deactivates every fly on the scene 
-		 * then activates every fly again in a different position.
-		 */
-
 		Instantiate(pickupPrefab, transform.position, Quaternion.identity);
 		FlySpawner.totalFlies--;
-
 		other.gameObject.SetActive(false);
 	}
-
 }
 
 
