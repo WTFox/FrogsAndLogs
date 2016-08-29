@@ -8,6 +8,7 @@ public class FlySpawner : MonoBehaviour {
 	private float spawnArea = 25.0f;
 
 	public static int totalFlies;
+	public FlyPool flyPool;
 
 	// Use this for initialization
 	void Start () {
@@ -28,8 +29,10 @@ public class FlySpawner : MonoBehaviour {
 			float positionZ = Random.Range(-spawnArea, spawnArea);
 			Vector3 flyPosition = new Vector3(positionX, 2f, positionZ);
 
-			// .. and instantiate the fly. 
-			Instantiate(flyPrefab, flyPosition, Quaternion.identity);
+			GameObject flyObj = flyPool.GetPoolObject();
+			flyObj.transform.localPosition = flyPosition;
+			flyObj.SetActive(true);
+
 		}
 	}
 }

@@ -3,16 +3,22 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 	[SerializeField] private RandomSoundPlayer playerFootsteps;
+
+	[SerializeField] private GameObject pickupPrefab;
+
 	private Animator playerAnimator;
 	private float moveHorizontal;
 	private float moveVertical;
 	private Vector3 movement;
 	private float turningSpeed = 20.0f;
 	private Rigidbody playerRigidbody;
-	
+
+	public FlyEventHandlers flyHandlers;
+
 
 	// Use this for initialization
 	void Start() {
+		flyHandlers.OnFlyCaught += HandleCaughtFly;
 
 		// Gather components from the Player GameObject
 		playerAnimator = GetComponent<Animator>();
@@ -55,6 +61,27 @@ public class PlayerMovement : MonoBehaviour {
 			playerFootsteps.enabled = false;
 		}
 	}
+
+	void OnTriggerEnter(Collider other) {
+		if(other.gameObject.tag == "Fly") {
+			flyHandlers.ProcessCaughtFly(other);
+		}
+	}
+
+
+	private void HandleCaughtFly(Collider other) {
+		Debug.Log("HandleCaughtFly..");
+		/* the next line runs once per each fly in the scene (12 times)
+		 * which deactivates every fly on the scene 
+		 * then activates every fly again in a different position.
+		 */
+
+		Instantiate(pickupPrefab, transform.position, Quaternion.identity);
+		FlySpawner.totalFlies--;
+
+		other.gameObject.SetActive(false);
+	}
+
 }
 
 

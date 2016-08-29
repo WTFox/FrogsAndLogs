@@ -6,30 +6,30 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     3072 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.048 seconds
-Platform assembly: C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\wtfox\Documents\Unity\Frogs and Logs\Builds\frogsandlogs_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.161 seconds
+Platform assembly: C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Dev\Unity\FrogsAndLogs\Builds\frogsandlogs_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.803854 ms
+UnloadTime: 0.738651 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 16.783743 ms
+UnloadTime: 10.201063 ms
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1000.
-Total: 0.504408 ms (FindLiveObjects: 0.037430 ms CreateObjectMapping: 0.031393 ms MarkObjects: 0.191983 ms  DeleteObjects: 0.243601 ms)
+Total: 0.602211 ms (FindLiveObjects: 0.047995 ms CreateObjectMapping: 0.031997 ms MarkObjects: 0.211603 ms  DeleteObjects: 0.310312 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 299c -> priority: 1 
-  Thread -> id: 1278 -> priority: 1 
+  Thread -> id: 5b0 -> priority: 1 
+  Thread -> id: 2ca4 -> priority: 1 

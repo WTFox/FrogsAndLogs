@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
 	[SerializeField] private GameObject pickupPrefab;
@@ -15,8 +14,6 @@ public class PlayerHealth : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.CompareTag("Enemy") && alive) {
 			alive = false;
-
-			// Create the pickup particles
 			Instantiate(pickupPrefab, transform.position, Quaternion.identity);
 		}
 	}
